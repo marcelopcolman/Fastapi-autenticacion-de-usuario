@@ -1,0 +1,23 @@
+El código proporcionado es una implementación básica de autenticación de usuarios utilizando FastAPI. Aquí hay un resumen de lo que hace cada parte del código: 
+ 
+- Se importan las bibliotecas necesarias, incluyendo FastAPI, para crear la aplicación web, y otras bibliotecas como passlib, pydantic, jose y datetime. 
+- Se define una base de datos ficticia de usuarios. 
+- Se crea una instancia de la aplicación FastAPI. 
+- Se define un esquema de autenticación OAuth2 utilizando el esquema de flujo de contraseña. 
+- Se define un contexto de contraseña utilizando passlib para verificar las contraseñas de los usuarios. 
+- Se definen constantes para la clave secreta y el algoritmo utilizado para firmar los tokens JWT. 
+- Se definen modelos de datos para representar a los usuarios y a los usuarios en la base de datos. 
+- Se define una función para obtener un usuario de la base de datos. 
+- Se define una función para verificar una contraseña ingresada por un usuario. 
+- Se define una función para autenticar a un usuario. 
+- Se define una función para crear un token JWT. 
+- Se define una función de dependencia para obtener el usuario actual a partir del token JWT. 
+- Se define una función de dependencia para verificar si el usuario actual está desactivado. 
+- Se definen rutas de la API para el punto de entrada raíz, obtener información del usuario actual y para iniciar sesión y obtener un token de acceso. 
+- La función principal del punto de entrada raíz simplemente devuelve un saludo. 
+- La función para obtener información del usuario actual utiliza la función de dependencia para obtener el usuario actual y lo devuelve. 
+- La función para iniciar sesión y obtener un token de acceso autentica al usuario y crea un token de acceso JWT. 
+ 
+Este código proporciona una implementación básica de autenticación de usuarios utilizando tokens JWT en FastAPI. Puedes utilizarlo como punto de partida para construir un sistema de autenticación más completo y seguro.
+
+
